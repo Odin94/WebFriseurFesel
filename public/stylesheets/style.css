@@ -1,0 +1,62 @@
+body {
+    /*To prevent navbar overlap*/
+    padding-top: 100px;
+    background: url("../images/phung-h-i-247271.jpg") no-repeat;
+    background-size: cover;
+    background-color: #222;
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+}
+
+.navbar .navbar-default {
+
+}
+
+/*.navbar-right {*/
+/*font-size: 2em;*/
+
+/*}*/
+
+/*.navbar-brand {*/
+/*font-size: 3em;*/
+/*float: none;*/
+/*}*/
+h1 {
+    text-align: center;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 75px;
+    height: 75px;
+    padding-top: 0;
+    font-size: 2em;
+
+    /*background-color: #464646;*/
+    /*margin: 40px 0;*/
+}
+
+.navbar-right li {
+    margin: 0 1.3em;
+}
+
+.jumbotron {
+    background-color: rgba(34, 34, 34, 0.6); /* #222 */
+    color: #d3d3d3;
+
+    text-shadow: 1px 1px 2px black;
+}
+
+.jumbotron h1 {
+    padding-bottom: 20px;
+
+    color: #d3d3d3;
+}
+
+.jumbotron p {
+    font-size: 25px;
+}
+
+hr {
+    width: 33%;
+}
