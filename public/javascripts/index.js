@@ -4,7 +4,7 @@
 
 var date = new Date();
 
-$("#day" + date.getDay()).css("color", "#1E81E0");
+$("#day" + date.getDay()).css("color", "brown");//"#1E81E0");  // brown is actually red-brown
 
 
 // Highlight navbar items

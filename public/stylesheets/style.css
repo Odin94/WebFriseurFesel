@@ -6,6 +6,7 @@ body {
     background-color: #222;
     font-family: 'Dosis', sans-serif;
     font-size: 18px;
+    height: 100%;
 }
 
 .top-container {
@@ -15,7 +16,7 @@ body {
 .background-div {
     background: url("../images/phung-h-i-247271.jpg") no-repeat;
     background-size: cover;
-    height: 130vh;
+    min-height: 130vh;
     width: 100%;
 }
 
@@ -56,10 +57,12 @@ h1 {
     background-color: rgba(34, 34, 34, 0.6); /* #222 */
     color: #d3d3d3;
 
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
 }
 
 .jumbotron h1 {
+    font-size: 45px;
+
     padding-bottom: 15px;
 
     color: #d3d3d3;
@@ -124,6 +127,9 @@ hr {
 }
 
 .pricelist {
+    width: 75%;
+    margin-left: 12.5%;
+
     background-color: #222;
     border-radius: 15px;
     overflow: hidden;
@@ -179,11 +185,17 @@ hr {
 }
 
 #impressum-link {
-    float:right;
+    float: right;
     padding-right: 10%;
 }
 
 #footer {
+    position: relative;
+    margin-top: -20px; /* negative value of footer height */
+    height: 20px;
+    clear: both;
+    width: 100%;
+
     color: #d3d3d3;
     background: #222222;
 }
