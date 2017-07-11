@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="public/stylesheets/style.css"/>
     <title>Friseur Fesel</title>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/2c430df85a.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
 </head>
 <body>
@@ -14,6 +16,7 @@
         crossorigin="anonymous">
 </script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.js'></script>
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
@@ -26,13 +29,18 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/"><strong><i class="fa fa-scissors" aria-hidden="true"></i> Friseur Fesel</strong></a>
+            <dl>
+                <dt class="phone-dt"><a class="navbar-brand" href="/"><strong><i class="fa fa-scissors" aria-hidden="true"></i> Friseur Fesel</strong></a></dt> <dd id="phone-number">
+                    Telefon: 238/239723458</dd>
+            </dl>
+
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/zeiten">Öffnungszeiten</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/kontakt">Kontakt</a></li>
                 <li><a href="/anfahrt">Anfahrt</a></li>
                 <li><a href="/preise">Preise</a></li>
             </ul>

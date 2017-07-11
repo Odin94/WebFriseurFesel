@@ -1,6 +1,6 @@
 body {
     /*To prevent navbar overlap*/
-    padding-top: 100px;
+    padding-top: 125px;
     background: url("../images/phung-h-i-247271.jpg") no-repeat;
     background-size: cover;
     background-color: #222;
@@ -12,20 +12,10 @@ body {
 
 }
 
-/*.navbar-right {*/
-/*font-size: 2em;*/
-
-/*}*/
-
-/*.navbar-brand {*/
-/*font-size: 3em;*/
-/*float: none;*/
-/*}*/
 h1 {
     text-align: center;
 }
 
-.navbar-brand,
 .navbar-nav li a {
     line-height: 75px;
     height: 75px;
@@ -34,6 +24,17 @@ h1 {
 
     /*background-color: #464646;*/
     /*margin: 40px 0;*/
+}
+
+.navbar-brand {
+    font-size: 2em;
+}
+
+#phone-number {
+    clear: both;
+
+    color: #d3d3d3;
+    text-align: center;
 }
 
 .navbar-right li {
@@ -62,14 +63,62 @@ hr {
     padding-bottom: 10px;
 }
 
-.row-centered {
-    text-align:center;
+#below-address {
+    padding-top: 16px;
+    padding-bottom: 0;
 }
+
+.row-centered {
+    text-align: center;
+}
+
 .col-centered {
-    display:inline-block;
-    float:none;
+    display: inline-block;
+    float: none;
     /* reset the text-align */
-    text-align:left;
+    text-align: left;
     /* inline-block space fix */
-    margin-right:-4px;
+    margin-right: -4px;
+}
+
+#address {
+    text-align: center;
+    padding-top: 2.5%;
+}
+
+#map {
+    margin-left: 12.5%;
+    margin-top: 50px;
+    width: 75%;
+    height: 75%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.marker {
+    background-image: url('https://www.mapbox.com/mapbox-gl-js/assets/washington-monument.jpg');
+}
+
+.mapboxgl-popup-content {
+    color: black;
+    font-size: 14px;
+}
+
+#map-container {
+    margin-bottom: 50%;
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.pricelist {
+    background-color: #222;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.pricelist tbody tr:hover td,
+.pricelist tbody tr:hover th {
+    background-color: rgba(0, 0, 0, 0.9);
 }

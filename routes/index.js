@@ -14,8 +14,8 @@ router.get('/anfahrt', function (req, res, next) {
     res.render('anfahrt');
 });
 
-router.get('/zeiten', function (req, res, next) {
-    res.render('zeiten');
+router.get('/kontakt', function (req, res, next) {
+    res.render('kontakt');
 });
 
 /* GET ABOUT page. */

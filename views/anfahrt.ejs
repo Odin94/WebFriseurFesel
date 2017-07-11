@@ -1,5 +1,69 @@
 <% include partials/header %>
 
-<h1>Anfahrt</h1>
+<div class="container">
+    <div class="jumbotron">
+        <div class="row display-flex">
+            <div class="col-xs-12">
+                <h1>Anfahrt</h1>
+            </div>
+            <hr>
+        </div>
+
+        <div class="row display-flex">
+            <div id="address" class="col-sm-6">
+                <p>Friseur Fesel</p>
+                <p>Feselstraße 16</p>
+                <p>85386 Eching</p>
+                <hr>
+                <p>5 Minuten Fußweg vom Echinger S-Bahnhof</p>
+                <p>10 Minuten Fußweg von der Bushaltestelle Regnerweg der Linie 281</p>
+            </div>
+            <div class="col-sm-6">
+                <div class="thumbnail">
+                    <img class="img-thumbnail" src="images/matt-jones-38742.jpg">
+                </div>
+            </div>
+            <hr id="below-address">
+        </div>
+
+        <div class="row display-flex">
+            <div class="col-xs-12">
+                <div id="map-container">
+                    <div id='map'>
+                        <script>
+                            mapboxgl.accessToken = 'pk.eyJ1Ijoid2ViYmFyZGRldnNvbiIsImEiOiJjajR5bmlia3gxdnM5MzNsYWtzMnhhdGkzIn0.g7pEEWU6qwJBEqQ2CB9BWg';
+
+                            var popup = new mapboxgl.Popup({offset: 25})
+                                .setText('Friseur Fesel, Feselstraße 16');
+
+                            var map = new mapboxgl.Map({
+                                container: 'map', // container id
+                                style: 'mapbox://styles/mapbox/streets-v9',
+                                center: [11.6212, 48.2984], // starting position
+                                zoom: 15 // starting zoom
+                            });
+
+                            // Add zoom and rotation controls to the map.
+                            map.addControl(new mapboxgl.NavigationControl());
+
+                            // add markers to map
+                            // create a DOM element for the marker
+                            var el = document.createElement('div');
+                            el.className = 'marker';
+                            el.style.width = '16px';
+                            el.style.height = '16px';
+
+                            // add marker to map
+                            new mapboxgl.Marker(el, {offset: [-16 / 2, -16 / 2]})
+                                .setLngLat([11.6212, 48.2984])
+                                .setPopup(popup)
+                                .addTo(map);
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <% include partials/footer %>
