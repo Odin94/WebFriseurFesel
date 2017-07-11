@@ -1,15 +1,26 @@
 body {
     /*To prevent navbar overlap*/
-    padding-top: 125px;
-    background: url("../images/phung-h-i-247271.jpg") no-repeat;
-    background-size: cover;
+    /*padding-top: 20%;!*85px;*!*/
+    /*background: url("../images/phung-h-i-247271.jpg") no-repeat;*/
+    /*background-size: cover;*/
     background-color: #222;
     font-family: 'Dosis', sans-serif;
     font-size: 18px;
 }
 
-.navbar .navbar-default {
+.top-container {
+    padding-top: 8px;
+}
 
+.background-div {
+    background: url("../images/phung-h-i-247271.jpg") no-repeat;
+    background-size: cover;
+    height: 130vh;
+    width: 100%;
+}
+
+.navbar {
+    margin-bottom: 0;
 }
 
 h1 {
@@ -121,4 +132,43 @@ hr {
 .pricelist tbody tr:hover td,
 .pricelist tbody tr:hover th {
     background-color: rgba(0, 0, 0, 0.9);
+}
+
+/*Page transition animation*/
+/*To make animations work well, turn nav-links into buttons that fade out and then link*/
+.animate-in {
+    /*-webkit-animation: fadeIn .5s ease-in;*/
+    /*animation: fadeIn .5s ease-in;*/
+}
+
+.animate-out {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#social-media {
+    font-size: 2em;
+}
+
+#social-media a {
+    padding: 0 8px;
 }
