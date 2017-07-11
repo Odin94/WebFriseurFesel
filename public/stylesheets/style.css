@@ -172,3 +172,18 @@ hr {
 #social-media a {
     padding: 0 8px;
 }
+
+#impressum p {
+    font-size: 21px;
+    margin: 0;
+}
+
+#impressum-link {
+    float:right;
+    padding-right: 10%;
+}
+
+#footer {
+    color: #d3d3d3;
+    background: #222222;
+}

@@ -19,6 +19,9 @@ else if (window.location.href.indexOf("anfahrt") > -1) {
 else if (window.location.href.indexOf("preise") > -1) {
     $("#preise").css("color", navItemColor);
 }
+else if (window.location.href.indexOf("impressum") > -1) {
+
+}
 else {
     $("#home").css("color", navItemColor);
 }
